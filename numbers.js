@@ -40,6 +40,7 @@ const add = document.querySelector('#add');
 const subtract = document.querySelector('#subtract');
 const divide = document.querySelector('#divide');
 const score = document.querySelector('#score');
+const numberDifference = document.querySelector('#number-difference');
 
 
 
@@ -172,19 +173,20 @@ function calculateTotal() {
 function scoreAnswer() {
     console.log('scoreAnswer function was called')
     difference = Math.abs(randomNumber - total)
+    numberDifference.textContent = difference + " away from target!"
     console.log(difference)
     if (difference === 0) {
-        score.textContent = '10 points!'
+        score.textContent = 'Score: 10 points!'
     }
     if (difference >= 1 && difference <= 20) {
-        score.textContent = '7 points!'
+        score.textContent = 'Score: 7 points!'
     }
    
     if (difference >= 21 && difference <= 40) {
-        score.textContent = '5 points!'
+        score.textContent = 'Score: 5 points!'
     }
     if (difference >= 41 && difference <= 60) {
-        score.textContent = '5 points!'
+        score.textContent = 'Score: 2 points!'
     }
     if (difference >= 0 && difference <= 999999999) {
         score.textContent = 'TEST SCORE!'
