@@ -181,16 +181,15 @@ function scoreAnswer() {
     if (difference >= 1 && difference <= 20) {
         score.textContent = 'Score: 7 points!'
     }
-   
     if (difference >= 21 && difference <= 40) {
         score.textContent = 'Score: 5 points!'
     }
     if (difference >= 41 && difference <= 60) {
         score.textContent = 'Score: 2 points!'
     }
-    if (difference >= 0 && difference <= 999999999) {
-        score.textContent = 'TEST SCORE!'
-    }
+    // else (difference >= 0 && difference <= 999999999) 
+    //     score.textContent = 'TEST SCORE!'
+    
 }
 // Listeners
 //====================================
