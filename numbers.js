@@ -186,7 +186,7 @@ function scoreAnswer() {
     if (difference >= 41 && difference <= 60) {
         score.textContent = '5 points!'
     }
-    if (difference >= 0 && difference <= 999) {
+    if (difference >= 0 && difference <= 999999999) {
         score.textContent = 'TEST SCORE!'
     }
 }
