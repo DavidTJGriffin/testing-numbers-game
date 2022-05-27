@@ -171,7 +171,7 @@ function calculateTotal() {
 
 function scoreAnswer() {
     console.log('scoreAnswer function was called')
-    difference = randomNumber - total
+    difference = Math.abs(randomNumber - total)
     console.log(difference)
     if (difference === 0) {
         score.textContent = '10 points!'
